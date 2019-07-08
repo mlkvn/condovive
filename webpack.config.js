@@ -1,10 +1,15 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
-/*
-import SitemapPlugin from 'sitemap-webpack-plugin';
-const SitemapPlugin = require('sitemap-webpack-plugin');
-*/
+const SitemapPlugin = require('sitemap-webpack-plugin').default;
+
+/* basic paths -- directly compatible with static-site-generator-webpack-plugin */
+const paths = [
+  '/acerca.html/',
+  '/precio.html/',
+  '/contacto.html/'
+];
+
 module.exports = {
 	entry: './src/js',
 	output: {
@@ -109,6 +114,7 @@ module.exports = {
 			template: './src/avisodeprivacidad.html',
 			filename: 'avisodeprivacidad.html',
 			favicon: './src/favicon-condovive.ico'
-		})
+		}),
+		new SitemapPlugin('http://localhost:8080', paths)
 	]
 };
