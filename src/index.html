@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0
+			user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Inicio | CondoVive</title>
+	<link rel="icon" href="static/favicon-condovive.ico">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+	<nav class="navbar--inverse menu-responsive">
+		<div class="menu__header-container">
+			<a href="./index.html">
+				<img src="static/logo_condovive_inverse.svg" alt="Condovive" class="logo--responsive" />
+			</a>
+			<i class="material-icons" id="close-menu-button">cerrar</i>
+		</div>
+		<hr class="menu__divider" />
+		<div class="menu__container">
+			<a href="./acerca.html">
+				<p class="menu__route">
+					¿Porqué Condovive?
+				</p>
+			</a>
+			<hr />
+			<a href="./precio.html">
+				<p class="menu__route">
+					Precios
+				</p>
+			</a>
+			<hr />
+			<a href="./contacto.html">
+				<p class="menu__route">
+					Contacto
+				</p>
+			</a>
+			<hr />
+			<select name="countries" id="countries" class="countries-select mt-2">
+			</select>
+			<a href="./demo.html" class="btn menu__demo-button btn-inverse btn--big">Demo gratis</a>
+		</div>
+	</nav>
+	<nav class="navbar">
+		<div class="container">
+			<div class="header__top--responsive">
+				<a href="./index.html">
+					<img src="static/logo_condovive.svg" alt="Condovive" class="logo--responsive" id="main-logo-responsive" />
+				</a>
+				<i class="material-icons" id="open-menu-button">menu</i>
+			</div>
+			<div class="header__top">
+				<a href="./index.html">
+					<img src="static/logo_condovive.svg" alt="Condovive" class="logo" id="main-logo" />
+				</a>
+				<div class="header__top__container">
+					<a href="./acerca.html" class="text text--white text--bold text--medium header__top__item text--hover">¿Qué es CondoVive?</a>
+					<a href="./precio.html" class="text text--white text--bold text--medium header__top__item text--hover">Precios</a>
+					<a href="./contacto.html" class="text--white text--bold text--medium header__top__item text--hover">Contacto</a>
+					<select name="countries" id="countries" class="countries-select"></select>
+				</div>
+				<a href="./demo.html" class="btn btn--small">Demo Gratis</a>
+			</div>
+		</div>
+	</nav>
+	<section class="bgcolor--blue header">
+		<div class="container">
+			<div class="header__container">
+				<div class="header__left">
+					<h1 class="text text--white header__mainTitle">
+						¡Todas tus propiedades <br/>
+						en un solo lugar!
+					</h1>
+					<h2 class="text text--white header__subtitle">
+						Transparencia, cobranza, facturación y <br/>
+						reportes para tus propiedades en tiempo real.
+					</h2>
+					<a href="./demo.html" class="btn btn--medium">Demo Gratis</a>
+					<h3 class="text text--white text--regular mt-3">
+						Pruébanos por 30 días sin <br/>
+						costo y sin tarjetas
+					</h3>
+				</div>
+				<a class="" data-toggle="modal" href='#modal-video'>
+					<img src="static/index/icon_header.png" alt="header" class="header__icon" />
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="mt-5 mb-5 container">
+		<p class="benefits__title text--center">
+			¿Qué puedes hacer con <br/>
+			CondoVive?
+		</p>
+		<div class="content__benefits_container">
+			<div class="content__benefits_item">
+				<img src="static/index/icon_facturas.png" alt="Primeros pasos" class="content__benefits_item_image" />
+				<p class="benefit__subtitle text text--center text--subtitle m-0">
+					Maneja múltiples condominios
+				</p>
+				<p class="benefit__description text text--center text--medium">
+					Desde un condominio de 10 casas hasta centenares de propiedades
+				</p>
+				<a class="btn btn-inverse btn--extra-small btn--center mt-4">Leer +</a>
+			</div>
+			<div class="content__benefits_item">
+				<img src="static/index/icon_egresosingresos.png" alt="Primeros pasos" class="content__benefits_item_image" />
+				<p class="benefit__subtitle text text--center text--subtitle">
+					Maneja todos tus ingresos y egresos
+				</p>
+				<p class="benefit__description text text--center text--medium">
+					Consulta con facilidad, los pagos y egresos realizados por día, mes y año
+				</p>
+				<a class="btn btn-inverse btn--extra-small btn--center mt-4">Leer +</a>
+			</div>
+			<div class="content__benefits_item">
+				<img src="static/index/icon_transparencia.png" alt="Primeros pasos" class="content__benefits_item_image" />
+				<p class="benefit__subtitle text text--center text--subtitle">
+					Transparencia en todos tus movimientos
+				</p>
+				<p class="benefit__description text text--center text--medium">
+					Deja que tus condóminos consulten los movimientos que realiza el condominio
+				</p>
+				<a class="btn btn-inverse btn--extra-small btn--center mt-4">Leer+</a>
+			</div>
+			<div class="content__benefits_item">
+				<img src="static/index/icon_app.png" alt="Primeros pasos" class="content__benefits_item_image" />
+				<p class="benefit__subtitle text text--center text--subtitle">
+					App para tus <br/>
+					condominios
+				</p>
+				<p class="benefit__description text text--center text--medium">
+					Envía correos personalizados con las últimas noticias o avisos de tu propiedad
+				</p>
+				<a class="btn btn-inverse btn--extra-small btn--center mt-4">Leer +</a>
+			</div>
+		</div>
+	</section>
+	<section class="bgcolor--testimonial">
+		<div class="testimonial container">
+			<div class="testimonial__text_container">
+				<h4 class="text testimonial--text mt-0 mb-0">
+					CondoVive permite organizar la información de mis clientes de manera sencilla, lo que me facilita obtener reportes claros y precisos."
+				</h4>
+				<p class="text testimonial--author mt-3">
+					Martha Ruíz, Directora Adjunta de Acierto, México
+				</p>
+			</div>
+			<img src="static/index/testimonio_CEO.png" alt="testimonial" class="testimonial__image" />
+		</div>
+	</section>
+	<section class="mt-5 container">
+		<p class="text text--title">
+			Descubre más con CondoVive
+		</p>
+		<div class="content__discover_container">
+			<div class="content__discover_item">
+				<img src="static/acerca/primerospasos.png" alt="Primeros pasos" class="content__discover_item_image" />
+				<p class="text text--center text--subtitle">
+					Realiza tus primeros pasos <br/>
+					en CondoVive
+				</p>
+				<p class="text text--center text--regular">
+					Si es tu primera vez utilizando CondoVive y <br/>
+					estás buscando aprender, estás en el lugar <br/>
+					indicado.
+				</p>
+			</div>
+			<div class="content__discover_item">
+				<img src="static/acerca/factura.png" alt="Primeros pasos" class="content__discover_item_image" />
+				<p class="text text--center text--subtitle">
+					¿Qué necesitas para <br/>
+					Facturar en México?
+				</p>
+				<p class="text text--center text--regular">
+					La facturación desde la plataforma es <br/>
+					sencilla, esta información es regulada por el SAT (Servicio de
+					Adminstración Tributaria).
+				</p>
+			</div>
+			<div class="content__discover_item">
+				<img src="static/acerca/manual.png" alt="Primeros pasos" class="content__discover_item_image" />
+				<p class="text text--center text--subtitle">
+					Manual de Usuario <br> para Residentes
+				</p>
+				<p class="text text--center text--regular">
+					El proceso para iniciar con una guía paso a <br />
+					paso que detalla las funciones que se <br />
+					pueden realizar desde la plataforma Web <br />
+					así como la APP Móvil.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="mt-5 mb-5 container">
+		<p class="text--title text--center">
+			+ de 7 años de trabajar <br />
+			con los mejores
+		</p>
+		<div class="brands__container">
+			<img src="static/condovive-obk.png" alt="OBK" />
+			<img src="static/condovive-convive.png" alt="Convive" />
+			<img src="static/condovive-alto-horizonte.png" alt="Alto Horizonte" />
+			<img src="static/condovive-managetek.png" alt="Managetek" />
+			<img src="static/condovive-camia.png" alt="Camia" />
+		</div>
+	</section>
+	<section class="bgcolor--blue">
+		<div class="startDemo">
+			<div class="container flex flex--column">
+				<p class="text text--white startDemo__heading mt-0 mb-0">
+					¡Es fácil comenzar tu DEMO!
+				</p>
+				<p class="text text--center text--white text--medium mt-1">
+					¡Y totalmente gratis! Dos cosas que todo mundo ama. ;)
+				</p>
+				<a href="./demo.html" class="btn btn--big btn--center startDemo__button--margin pt-3 pb-3 mt-3"> 
+					Demo Gratis
+				</a>
+			</div>
+		</div>
+		<div class="footer__divider--responsive"></div>
+	</section>
+	<hr class="footer__divider" />
+	<footer class="bgcolor--blue pt-5">
+		<div class="footer container pt-0">
+			<div class="footer__row footer__row_home">
+				<div class="footer__row_item
+						footer__row_item--column">
+					<p class="text text--white text--author--big mt-0">
+						Recursos CondoVive
+					</p>
+					<div class="footer__row_item_row">
+						<img src="static/icon_recursoscondovive.svg" alt="Recursos
+								CondoVive" class="footer__row_item_row_icon" />
+						<div class="footer__row_item_row_text">
+							<p class="text text--regular text--white">
+								Una colección de <br/>
+								grandes recursos <br/>
+								seleccionados <br/>
+								minusciosamente por <br/>
+								el equipo CondoVive
+							</p>
+							<a href="#">
+								<p class="text text--regular text--white text--hover">
+									Leer más
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__middleLine"></div>
+				<div class="footer__row_item footer__row_item--grid">
+					<div class="footer__row_item_column">
+						<p class="text text--medium text--bold
+								text--white footer--marginTitle">
+							¿Quienes somos?
+						</p>
+						<a href="#">
+							<p class="text text--white text--footer text--hover">
+								Equipo
+							</p>
+						</a>
+						<a href="#">
+							<p class="text text--white text--footer
+									footer--marginText text--hover">
+								Oportunidades
+								<p class="text text--white text--footer
+										footer--marginText text--hover">
+									Servicio al Cliente
+								</p>
+						</a>
+					</div>
+					<div class="footer__row_item_column">
+						<p class="text text--medium text--bold
+									text--white footer--marginTitle">
+							Producto
+						</p>
+						<a href="#">
+							<p class="text text--white text--footer text--hover">
+								App
+							</p>
+						</a>
+						<a href="#">
+							<p class="text text--white text--footer
+										footer--marginText text--hover">
+								Ayuda
+							</p>
+						</a>
+						<a href="#">
+							<p class="text text--white text--footer
+										footer--marginText text--hover">
+								Seguridad
+							</p>
+						</a>
+						<a href="./politicaderespaldo.html">
+							<p class="text text--white text--footer
+										footer--marginText text--hover">
+								Políticas de Respaldo
+							</p>
+						</a>
+					</div>
+					<div class="footer__row_item_column">
+						<p class="text text--medium text--bold
+									text--white footer--marginTitle">
+							Comunidad
+						</p>
+						<a href="#">
+							<p class="text text--white text--footer text--hover">
+								Eventos
+							</p>
+						</a>
+						<a href="#">
+							<p class="text text--white text--footer
+										footer--marginText text--hover">
+								Certificaciones
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__social_container">
+				<a href="https://www.facebook.com/CondoVive">
+					<img src="static/facebook_icon.svg" class="footer__social_item" />
+				</a>
+				<a href="https://twitter.com/condovive">
+					<img src="static/twitter_icon.png" class="footer__social_item" />
+				</a>
+				<a href="https://www.instagram.com/condovive">
+					<img src="static/instagram_icon.png" class="footer__social_item" />
+				</a>
+			</div>
+			<div class="footer__downloadApps_container">
+				<a href="#">
+					<img src="static/appstore.svg" alt="Appstore Condovive" class="footer__downloadApps_item
+								footer__downloadApps_item--margin" />
+				</a>
+				<a href="#">
+					<img src="static/googleplay.svg" alt="Appstore Condovive" class="footer__downloadApps_item" />
+				</a>
+			</div>
+			<p class="text text--center text--white
+						footer_smallText">
+				2012-2019 Todos los Derechos Reservados. CondoVive es una marca registrada perteneciente a Grupo Disforma.
+				<a href="./avisodeprivacidad.html">
+					<span class="footer__smallText_innerText text--hover">Aviso de Privacidad.</span>
+				</a>
+			</p>
+		</div>
+	</footer>
+
+<div class="modal fade" id="modal-video">
+ <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+   <div class="modal-body">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/0PUL7Qe85_g" id="iframe_video" frameborder="0" allowfullscreen></iframe>
+   </div>
+  </div>
+ </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

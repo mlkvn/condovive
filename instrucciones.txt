@@ -1,0 +1,18 @@
+Se integro webpack al proyecto con sus respectivos loaders y plugins para manejar los archivos html, css, js y archivos estaticos.
+
+Es necesario tener nodejs y npm instalados para ejecutar los scripts que están
+en el archivo package.json. Es posible instalarlos siguiendo los pasos en nodejs.org.
+
+No deben modificarse directamente los archivos dentro de la carpeta build, todo lo que deba modificarse debe hacerse en SRC.
+
+Hay 3 scripts, dos son dirigidos a entornos de desarrollo.
+
+Desarrollo: 
+  - npm start: ejecuta un servidor en localhost puerto 8080 que escucha cambios de la carpeta src.
+  - npm run dev: Transpila los archivos de la carpeta src/ sin minificar, con fines de desarrollo.
+  
+Produccion: 
+  - npm run build: Transpila los archivos de la carpeta src que estarán en produccion.
+
+Si se desea agregar mas vistas html es necesario modificar el archivo webpack.config.js y agregar los nuevos
+archivos html.
